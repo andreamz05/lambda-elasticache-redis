@@ -33,7 +33,6 @@ exports.handler =  async (event) => {
                     };
                 };
             });
-            
         });
     
         client.on('error', (err) => {
