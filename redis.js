@@ -22,7 +22,7 @@ exports.handler =  async (event) => {
                             statusCode: 200,
                             res: res
                         });                      
-                    }
+                    };
                     else {
                         await client.set('foo', 'myVal', 'EX', 60); //tiempo de expiracion en segundos
                         client.quit();
